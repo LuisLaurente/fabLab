@@ -1,0 +1,282 @@
+/* noticias.css */
+
+/* Header Styles */
+.page-header {
+    position: relative;
+    height: 400px;
+    background-image: url('/components/images/redFabLab.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* News Section Styles */
+main {
+    background-color: #f5f5f5;
+}
+
+.news-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.news-layout-1 {
+    flex-direction: row;
+}
+
+.news-layout-2 {
+    flex-direction: row-reverse;
+}
+
+.news-image {
+    flex: 1;
+    position: relative;
+    max-width: 40%;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.quote-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff6e0d;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-style: italic;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.quote-author {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #000;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.news-content {
+    flex: 1.5;
+}
+
+.news-title {
+    color: #ff6e0d;
+    font-size: 2.2rem;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.news-content p {
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+.key-elements ol {
+    padding-left: 20px;
+}
+
+.key-elements li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #ff6e0d;
+    font-weight: 600;
+}
+
+/* Memoria Section Styles */
+.memoria-section {
+    padding: 0;
+    position: relative;
+}
+
+.memoria-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.memoria-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff6e0d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    z-index: 2;
+}
+
+.memoria-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.memoria-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.memoria-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.memoria-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.memoria-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.navigation-arrows {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.arrow-left, .arrow-right {
+    background-color: #ff6e0d;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    pointer-events: auto;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #ff6e0d;
+}
+
+/* Bottom Image Section */
+.bottom-image {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .news-section {
+        flex-direction: column;
+    }
+    
+    .news-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    
+    .news-title {
+        font-size: 1.8rem;
+    }
+    
+    .navigation-arrows {
+        padding: 0 10px;
+    }
+    
+    .arrow-left, .arrow-right {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .memoria-image {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        height: 300px;
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .quote-overlay {
+        position: relative;
+    }
+    
+    .memoria-header h2 {
+        font-size: 1.5rem;
+    }
+}

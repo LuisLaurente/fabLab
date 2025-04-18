@@ -1,0 +1,859 @@
+/* Estilos para la página Nosotros */
+/* Estilos del header/banner */
+.page-header {
+    position: relative;
+    height: 500px;
+    background-image: url('/components/images/nosotros1.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    color: #ff6e0d;
+    font-size: 5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Sección de introducción */
+.about-intro {
+    padding: 3rem 10%;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.about-text {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.quote-left {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: #ff6e0d;
+    font-size: 2rem;
+}
+
+.quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #ff6e0d;
+    font-size: 2rem;
+}
+
+.highlight {
+    color: #ff6e0d;
+    font-weight: bold;
+}
+
+/* Sección de historia */
+.history-section {
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+
+.history-section h2 {
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    background-color: #5a5a5a;
+}
+.subtitle{
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    background-color: #5a5a5a;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.prev-btn, .next-btn {
+    background-color: transparent;
+    border: none;
+    color: #ff6e0d;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.timeline-years {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0 2rem;
+}
+
+.year {
+    color: #888;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.year::after {
+    content: '•';
+    display: block;
+    text-align: center;
+    color: #ff6e0d;
+}
+
+.timeline-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.timeline-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-image {
+    flex: 1;
+    height: 100%;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline-info {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.timeline-info h2{
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    color: #525252;
+    background-color: #ffffff;
+}
+
+.year-stamp {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.year-line {
+    width: 200px;
+    height: 4px;
+    background-color: #ff6600;
+    margin: 0.1rem 0 1rem;
+}
+
+.event-description {
+    font-size: 1.2rem;
+    color: #444;
+}
+/* Sección de valores con tarjetas giratorias */
+.values-section {
+    padding: 3rem 5%;
+    background-color: #f7f7f7;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.flip-card-front h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.mission {
+    background-image: url('/components/images/mision.jpeg');
+}
+
+/* Capa de color encima de la imagen */
+.mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgba(224, 112, 51, 0.7); /* Ajusta el color y la opacidad */
+    z-index: 0;
+}
+
+/* Asegura que el texto quede por encima del filtro */
+.mission * {
+    position: relative;
+    z-index: 1;
+}
+
+.vision {
+    background-image: url('/components/images/vision.webp');
+}
+
+.values {
+    background-image: url('/components/images/valores.webp');
+}
+
+.philosophy {
+    background-image: url('/components/images/filosofia.webp');
+}
+/* Capa de color encima de la imagen */
+.philosophy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgba(224, 112, 51, 0.7); /* Ajusta el color y la opacidad */
+    z-index: 0;
+}
+
+/* Asegura que el texto quede por encima del filtro */
+.philosophy * {
+    position: relative;
+    z-index: 1;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.orange {
+    background-color: #ff6e0d;
+}
+
+.gray {
+    background-color: #555555;
+}
+
+/* Sección de sedes */
+.locations-section {
+    padding: 3rem 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.locations-section h2 {
+    color: #ff6e0d;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.locations-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-item {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+}
+
+.location-header {
+    background-color: #414141;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-photo {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.location-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .location-item {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-header {
+        font-size: 1.2rem;
+        margin: 0 auto 10px;
+    }
+}
+/* Sección de organigrama */
+.organization-section {
+    padding: 3rem 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.organization-section h2 {
+    margin-bottom: 2rem;
+}
+
+.org-chart {
+    min-height: 300px;
+    /* Nota: Aquí irán los estilos específicos del organigrama */
+}
+
+/* Sección de tecnologías */
+.technologies-section {
+    padding: 3rem 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.technologies-section h2 {
+    color: #ff6e0d;
+    margin-bottom: 2rem;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Nota: Aquí irán los estilos específicos de los iconos de tecnología */
+}
+
+/* Sección del plano */
+.floorplan-section {
+    padding: 3rem 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.floorplan-section h2 {
+    margin-bottom: 2rem;
+}
+
+.floorplan {
+    max-width: 900px;
+    margin: 0 auto;
+    /* Nota: Aquí irán los estilos específicos del plano */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .locations-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .location-item {
+        width: 90%;
+    }
+    
+    .timeline-years {
+        width: 80%;
+    }
+    .history-section h2 {
+        text-align: center;
+        color: #f4f4f4;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        background-color: #5a5a5a;
+    }
+    .header-content h1 {
+        color: #ff6e0d;
+        font-size: 3rem;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 50px;
+        margin: 0;
+        display: inline-block;
+    }
+    .page-header {
+        position: relative;
+        height: 300px;
+        background-image: url('/components/images/nosotros1.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-text {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    .year {
+        color: #888;
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .year-line {
+        width: 50px;
+        height: 2px;
+        background-color: #ff6600;
+        margin: 0.1rem 0 1rem;
+    }
+    .timeline-card h2{
+        font-size: 20px;
+        margin-bottom: 0;
+        color: #333333;
+        background-color: #ffffff;
+    }
+    .locations-section h2 {
+        color: #ff6e0d;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .quote {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .event-description{
+        font-size: 0.85rem;
+        color: #444;
+    }
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 15% 80px;
+    background-color: #f9f9f9;
+    min-height: 500px;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.team-nav-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px 5px 0;
+    font-size: 25px;
+    color: #2e2e2e;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.team-nav-btn.active {
+    color: #ff6b00;
+}
+
+.team-nav-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6b00;
+}
+
+.team-members {
+    position: relative;
+    width: 100%;
+}
+
+.team-profile {
+    display: none;
+    width: 100%;
+}
+
+.team-profile.active {
+    display: block;
+}
+
+.profile-card {
+    display: flex;
+    background-color: #ececec;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.profile-info {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.profile-description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.profile-link {
+    color: #FF6B00;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.profile-image-container img {
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.dots-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.profile-image {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img:first-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.profile-image img:last-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    position: relative;
+}
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1200px) {
+    .team-section {
+        padding: 80px 15%;
+    }
+    
+    .profile-info h3 {
+        font-size: 35px;
+    }
+    
+    .profile-description {
+        font-size: 22px;
+    }
+    
+    .profile-link {
+        font-size: 22px;
+    }
+}
+
+/* Pantallas medianas (laptop) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .team-section {
+        padding: 60px 10%;
+    }
+    
+    .profile-info h3 {
+        font-size: 30px;
+    }
+    
+    .profile-description {
+        font-size: 18px;
+    }
+    
+    .profile-link {
+        font-size: 18px;
+    }
+    
+    .team-nav-btn {
+        font-size: 22px;
+    }
+}
+
+/* Pantallas tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+    .team-section {
+        padding: 50px 8%;
+        height: auto;
+    }
+    
+    .profile-card {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+    
+    .profile-image-container {
+        height: 350px;
+    }
+    
+    .profile-info {
+        padding: 30px;
+    }
+    
+    .profile-info h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .profile-description {
+        font-size: 16px;
+    }
+    
+    .profile-link {
+        font-size: 16px;
+    }
+    
+    .team-nav-btn {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+}
+
+/* Pantallas pequeñas (mobile) */
+@media (max-width: 767px) {
+    .team-section {
+        padding: 40px 5%;
+        height: auto;
+    }
+    
+    .profile-card {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+    
+    .profile-image-container {
+        height: 300px;
+    }
+    
+    .profile-info {
+        padding: 25px 20px;
+    }
+    
+    .profile-info h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .profile-description {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .profile-link {
+        font-size: 14px;
+    }
+    
+    .team-nav {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+    
+    .team-nav-btn {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+    
+    .profile-image-container img {
+        padding: 15px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .team-section {
+        padding: 30px 15px;
+    }
+    
+    .profile-image-container {
+        height: 250px;
+    }
+    
+    .profile-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .profile-description {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    .profile-link {
+        font-size: 13px;
+    }
+    
+    .team-nav-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 0 3px;
+    }
+    
+    .profile-image-container img {
+        padding: 10px;
+    }
+}
