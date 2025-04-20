@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FabLab Furniture</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#inicio">
+          <img src="/images/logoFabLab.png" alt="FabLab Furniture Logo" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#fablab">Fab Lab</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#sedes">Sedes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="menu-toggle">☰</div>
+    </nav>
+
+    <!--- HTML DE INICIO --->
+    <section id="inicio" class="section-inicio">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Diseña global,<br />fabrica local.</h2>
+          <p>Visión global, producción con impacto local.</p>
+          <div class="hero-buttons">
+            <a href="#team" class="btn btn-primary">
+              <span class="text">Conoce al Team</span>
+              <span class="flecha">→</span>
+            </a>
+            <a href="#fablab" class="btn btn-secondary">Start</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="images/9f55d52f54.gif"
+            alt="Imagen principal"
+            class="gif-fondo"
+          />
+          <div class="container-rayos">
+            <img
+              src="images/rayos2.gif"
+              alt="Efecto rayos"
+              class="gif-encima"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- LOGOS DE INICIO -->
+      <div class="partners-section">
+        <div class="partners-container">
+          <div class="partner-logo">
+            <img src="images/fablabperu.webp" alt="FabLab Perú" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/redperuana.webp" alt="Red Peruana de FabLabs" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/lat.webp" alt="FabLat" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/iemc.webp" alt="IME" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/electro.webp" alt="Electro Import" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/tinki.webp" alt="Tinki" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/faraday.webp" alt="Faraday" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fablab" class="section fablab-section">
+      <div class="overlay"></div>
+      <div class="about-content">
+        <div class="logo-engranaje">
+          <img src="images/logo_engranaje.webp" alt="Logo FabLab" />
+        </div>
+        <h1>Fab Lab iFurniture</h1>
+        <p class="description">
+          Somos el primer Fab Lab de Perú
+          <span class="highlight"
+            >ubicado en un colegio emblemático nacional Melitón Carvajal</span
+          >, donde se diseñan y ejecutan proyectos utilizando tecnologías de
+          vanguardia.
+        </p>
+        <a href="#team" class="btn-conocenos">
+          Conócenos
+          <span class="flecha">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section">
+      <div class="title-section">
+        <h2>Tecnologías</h2>
+      </div>
+      <div class="main-content">
+        <section class="service-intro">
+          <p class="service-description">
+            <span class="text-orange">Desde la creación de</span> diseños
+            personalizados
+            <span class="text-orange"
+              >hasta la fabricación de prototipos o piezas de precisión
+              con</span
+            >
+            tecnología avanzada.
+          </p>
+        </section>
+
+        <section class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="/images/cnc.webp" alt="CNC Láser" />
+            </div>
+            <h3>CNC LÁSER</h3>
+            <p>
+              Es una máquina que utiliza un láser controlado por computadora
+              para cortar, grabar o marcar diversos materiales con alta
+              precisión.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="/images/cncRouter.webp" alt="CNC Router" />
+            </div>
+            <h3>CNC ROUTER</h3>
+            <p>
+              Es una máquina de control numérico computarizado diseñada para
+              cortar, tallar, grabar o mecanizar diversos materiales mediante
+              una herramienta rotativa (fresa).
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="/images/impresion3d.webp" alt="Impresión 3D" />
+            </div>
+            <h3>IMPRESIÓN 3D</h3>
+            <p>
+              También conocida como fabricación aditiva, es un proceso mediante
+              el cual se crean objetos tridimensionales a partir de un diseño
+              digital.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="title-section">
+        <h2>Team</h2>
+      </div>
+      <section class="team-section">
+        <div class="team-nav">
+          <button class="team-nav-btn active" data-role="CEO">CEO</button>
+          <button class="team-nav-btn" data-role="CTO">CTO</button>
+          <button class="team-nav-btn" data-role="Fab-Manager">
+            Fab Manager
+          </button>
+          <button class="team-nav-btn" data-role="Administracion">
+            Administración
+          </button>
+        </div>
+
+        <div class="team-members">
+          <!--PERFILES DEL EQUIPO -->
+          <div class="team-profile active" id="CEO">
+            <div class="profile-card">
+              <div class="profile-info">
+                <h3>Vaneza Caycho Ñuflo</h3>
+                <p class="profile-description">
+                  CEO & Co-founder de iFurniture. Arquitecta UNFV, especialista
+                  en fabricación Digital y Diseño Paramétrico. Fab Academy
+                  Alumni, CBA - MIT 2014, Mg. Science of Design en la
+                  Universidad Adolfo Ibáñez - Chile. C.Mg.Gerencia en la
+                  Construcción Moderna, UNFV. Especialización Mobiliarios
+                  Innovadores Toulouse Lautrec. Fab Academy Instructor Jordania
+                  y Perú.
+                </p>
+                <a href="#" class="profile-link">LinkedIn ➤</a>
+              </div>
+              <div class="profile-image-container">
+                <div class="dots-pattern"></div>
+                <div class="profile-image">
+                  <img src="/images/puntos.png" alt="puntos" />
+                  <img src="/images/vanesa.webp" alt="Vaneza Caycho Ñuflo" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTO -->
+          <div class="team-profile" id="CTO">
+            <div class="profile-card">
+              <div class="profile-info">
+                <h3>Cristian Loayza Egoavil</h3>
+                <p class="profile-description">
+                  CTO & Co-Founder de iFurniture. Arquitecto por la Universidad
+                  Nacional Federico Villarreal (UNFV), Candidato Maestría en
+                  Ingeniería de Sistemas con mención en Gestión de Tecnologías
+                  de la información de la Escuela de Postgrado UNFV. Diseñador
+                  de Mobiliarios, Maker, Especialista en fabricación digital.
+                  Instructor de Máquinas Láser y Router CNC. Fab Academy Alumni
+                  2024.
+                </p>
+                <a href="#" class="profile-link">LinkedIn ➤</a>
+              </div>
+              <div class="profile-image-container">
+                <div class="dots-pattern"></div>
+                <div class="profile-image">
+                  <img src="/images/puntos.png" alt="puntos" />
+                  <img src="/images/Cristian.png" alt="Cristian" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--FAB MANAGER -->
+          <div class="team-profile" id="Fab-Manager">
+            <div class="profile-card">
+              <div class="profile-info">
+                <h3>Evelyn Cuadrado Guerrero</h3>
+                <p class="profile-description">
+                  Arquitecta de la Universidad Continental, Fab Manager del Fab
+                  Lab iFurniture, integrante del Programa The Woman Designer,
+                  con experiencia en proyectos de vivienda, trámites
+                  documentarios. Artista Urbana, Maker en Fab Lab Lima, co-
+                  investigadora en proyectos urbanos UC: Tradición y modernidad
+                  en la arquitectura del Mantaro, DESCO Centro de estudios y
+                  promoción del desarrollo 2012 (Los pueblos Urbanos del Valle
+                  del Mantaro).
+                </p>
+                <a href="#" class="profile-link">LinkedIn ➤</a>
+              </div>
+              <div class="profile-image-container">
+                <div class="dots-pattern"></div>
+                <div class="profile-image">
+                  <img src="/images/puntos.png" alt="puntos" />
+                  <img src="/images/Evelyn.png" alt="Evelyn" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADMINISTRACION -->
+          <div class="team-profile" id="Administracion">
+            <div class="profile-card">
+              <div class="profile-info">
+                <h3>Jhajaira Curisinche Matute</h3>
+                <p class="profile-description">
+                  Arquitecta de la Universidad Continental, Fab Manager del Fab
+                  Lab iFurniture, integrante del Programa The Woman Designer,
+                  con experiencia en proyectos de vivienda, trámites
+                  documentarios. Artista Urbana, Maker en Fab Lab Lima, co-
+                  investigadora en proyectos urbanos UC: Tradición y modernidad
+                  en la arquitectura del Mantaro, DESCO Centro de estudios y
+                  promoción del desarrollo 2012 (Los pueblos Urbanos del Valle
+                  del Mantaro).
+                </p>
+                <a href="#" class="profile-link">LinkedIn ➤</a>
+              </div>
+              <div class="profile-image-container">
+                <div class="dots-pattern"></div>
+                <div class="profile-image">
+                  <img src="/images/puntos.png" alt="puntos" />
+                  <img src="/images/Yajaira.png" alt="Jayaira" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="sedes" class="section">
+      <div class="title-section">
+        <h2>Sedes</h2>
+      </div>
+      <p class="quote">
+        "Dos puertas al futuro, donde la pasión e innovación dan realidad a
+        nuestras ideas"
+      </p>
+      <div class="locations-grid">
+        <div class="location-item">
+          <div class="location-header">Lima, Perú</div>
+          <div class="location-photo">
+            <img src="/images/limaPeru.webp" alt="Lima Peru Fab Lab" />
+          </div>
+        </div>
+
+        <div class="location-item">
+          <div class="location-header">Virginia, USA</div>
+          <div class="location-photo">
+            <img src="/images/usa.webp" alt="Virginia USA Fab Lab" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="title-section">
+        <h2>Contacto</h2>
+      </div>
+      <div class="container-contacto">
+        <div class="form-container">
+          <div class="form-intro">
+            <h2 class="TextContact">
+              ¿Quieres más información?<br>¿Te gustaría visitarnos? Escríbenos y descubre el mundo de la fabricación digital.
+            </h2>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="visitForm" class="contact-form">
+              <div class="form-group full-width">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre y Apellido"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group half-width">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                </div>
+                <div class="form-group half-width">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Teléfono"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <textarea
+                  id="reason"
+                  name="reason"
+                  placeholder="Motivo de visita"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="submit-button">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fablab-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/fabLabBlanco.png" alt="FABLAB iFurniture Logo" />
+        </div>
+
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#fablab">Fab Lab</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#sedes">Sedes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:hola@fablabifurniture.org"
+              >hola@fablabifurniture.org</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+51993080441">(+51) 993 080 441</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Av. Paseo de la República 2040, Lince, Lima 15046, Perú</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ICONOS DE REDES EN FOOTER -->
+      <div class="social-icons">
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        <a href="#" aria-label="Pinterest"
+          ><i class="fab fa-pinterest-p"></i
+        ></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="copyright">
+        <p>2024 © Fab Lab iFurniture | Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Funcionalidad del navbar en el TEAM-->
+    <script>
+      const teamNavBtns = document.querySelectorAll(".team-nav-btn");
+      const teamProfiles = document.querySelectorAll(".team-profile");
+
+      teamNavBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          teamNavBtns.forEach((item) => item.classList.remove("active"));
+          teamProfiles.forEach((profile) => profile.classList.remove("active"));
+          this.classList.add("active");
+          const role = this.getAttribute("data-role");
+          document.getElementById(role).classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
